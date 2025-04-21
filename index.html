@@ -20,8 +20,17 @@
 
   <section class="fade-in">
     <h1 class="glow-text">สวัสดีครับ 👋</h1>
-    <img src="profile.jpg" alt="รูปโปรไฟล์" class="profile-img">
-    
+
+    <div class="image-slider fade-in">
+      <div class="slides">
+        <img src="img1.jpg" alt="Image 1">
+        <img src="img2.jpg" alt="Image 2">
+        <img src="img3.jpg" alt="Image 3">
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>    
+
     <div class="text-box">
       <p>ผมชื่อ <strong>นายภาคินัย สุรินตา</strong> ชื่อเล่น <strong>ทรัพย์</strong> จบการศึกษาระดับปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์ จากมหาวิทยาลัยนเรศวร</p>
       <p>ผมมีความสนใจด้านการพัฒนาโปรแกรม การวิเคราะห์ข้อมูล และการทำ Automation ด้วย Python รวมถึงการใช้เครื่องมือใน Microsoft Office เพื่อลดขั้นตอนการทำงานซ้ำ ๆ ให้มีประสิทธิภาพมากยิ่งขึ้น</p>
@@ -38,6 +47,34 @@
       </ul>
     </div>
   </section>
+
+  <script>
+    let slideIndex = 0;
+
+    function showSlides() {
+      let slides = document.querySelectorAll(".slides img");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+
+    function moveSlide(n) {
+      slideIndex += n;
+      let slides = document.querySelectorAll(".slides img");
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      if (slideIndex < 1) { slideIndex = slides.length }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    showSlides(); // Initialize slider
+  </script>
 
 </body>
 </html>
