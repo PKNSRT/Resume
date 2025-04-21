@@ -120,6 +120,22 @@ h1 {
   }
 }
 
+/* ===== Glowing Text Animation ===== */
+.glow-text {
+  color: #e0e0e0;
+  text-shadow: 0 0 5px #9C27B0, 0 0 10px #9C27B0, 0 0 15px #9C27B0;
+  animation: glowText 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 5px #9C27B0, 0 0 10px #9C27B0, 0 0 15px #9C27B0;
+  }
+  to {
+    text-shadow: 0 0 10px #4c77af, 0 0 20px #4c77af, 0 0 30px #4c77af;
+  }
+}
+
 /* ===== Responsive Design ===== */
 @media screen and (max-width: 768px) {
   nav ul li {
