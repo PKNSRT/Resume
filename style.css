@@ -85,6 +85,24 @@ h1 {
   font-size: 18px;
 }
 
+/* ===== Contact Card Styling ===== */
+.contact-card {
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  width: 80%;
+  max-width: 600px;
+}
+
+.contact-card p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
 /* ===== Animation ===== */
 .fade-in {
   animation: fadeIn 1s ease-out forwards;
@@ -102,7 +120,7 @@ h1 {
   }
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive Design ===== */
 @media screen and (max-width: 768px) {
   nav ul li {
     margin: 0 15px;
@@ -110,6 +128,19 @@ h1 {
 
   .profile-img {
     width: 150px;
+  }
+
+  .contact-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .text-box {
+    font-size: 16px;
   }
 }
 
@@ -120,5 +151,18 @@ h1 {
 
   .profile-img {
     width: 130px;
+  }
+
+  .contact-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .text-box {
+    font-size: 14px;
   }
 }
