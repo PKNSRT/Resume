@@ -33,18 +33,61 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #9C27B0;
   font-size: 18px;
   text-decoration: none;
   padding: 8px 12px;
   font-weight: 500;
   transition: color 0.3s ease, transform 0.3s ease;
   border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
+/* ===== Icon Colors and Link Styling in Navbar ===== */
+
+/* Home */
+nav ul li a[href="index.html"] {
+  color: #9C27B0; /* เขียว */
+}
+
+nav ul li a[href="about.html"] {
+  color: #9C27B0; /* น้ำเงิน */
+}
+
+nav ul li a[href="experience.html"] {
+  color: #9C27B0; /* ส้ม */
+}
+
+nav ul li a[href="contact.html"] {
+  color: #9C27B0; /* ชมพู */
+}
+
+/* Icon colors */
+nav ul li a i.fa-home {
+  color: #9C27B0; /* เขียว */
+}
+
+nav ul li a i.fa-user {
+  color: #9C27B0; /* น้ำเงิน */
+}
+
+nav ul li a i.fa-briefcase {
+  color: #9C27B0; /* ส้ม */
+}
+
+nav ul li a i.fa-envelope {
+  color: #9C27B0; /* ชมพู */
+}
+
+/* ===== Hover effect for text and icons ===== */
 nav ul li a:hover {
-  color: #4c77af;
+  color: #ffffff; /* สีตัวอักษรเมื่อ hover */
   transform: scale(1.1);
+}
+
+nav ul li a:hover i {
+  color: #ffffff; /* ไอคอนเปลี่ยนเป็นสีขาวตอน hover */
 }
 
 /* ===== Section Styling ===== */
@@ -56,16 +99,11 @@ section {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   color: #E0E0E0;
   margin-bottom: 30px;
   text-transform: uppercase;
-}
-
-.glow-text {
-  color: #ffffff;
-  text-shadow: 0 0 8px #9C27B0, 0 0 16px #9C27B0, 0 0 24px #4c77af;
 }
 
 /* ===== Image Slider ===== */
@@ -75,20 +113,20 @@ h1 {
   margin: 30px auto;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   position: relative;
 }
 
 .image-slider .slides {
   display: flex;
   transition: transform 1s ease-in-out;
+  border-radius: 12px; /* ทำให้กรอบมุมมน */
 }
 
 .image-slider img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 12px; /* ทำให้มุมกรอบของภาพมน */
 }
 
 /* ===== Button Styling ===== */
@@ -126,7 +164,15 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: left;
   font-size: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* ===== Hover effect for Text Box ===== */
+.text-box:hover {
+  transform: scale(1.01); /* Makes the box slightly larger */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Adds a stronger shadow */
+}
+
 
 /* ===== Animation ===== */
 .fade-in {
@@ -157,7 +203,7 @@ h1 {
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .text-box {
@@ -176,7 +222,7 @@ h1 {
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .text-box {
