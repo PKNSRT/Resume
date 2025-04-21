@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #4CAF50;
+  color: #4c77af;
   transform: scale(1.1);
 }
 
@@ -61,9 +61,9 @@ h1 {
 /* ===== Profile Image ===== */
 .profile-img {
   width: 180px;
-  border-radius: 50%;
+  border-radius: 0%;
   margin: 30px 0;
-  border: 6px solid #444;
+  border: 6px solid #1E1E1E;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -73,101 +73,16 @@ h1 {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
 }
 
-/* ===== Project Card Styling ===== */
-.project {
-  display: inline-block;
-  width: 280px;
-  margin: 20px;
-  padding: 20px;
+/* ===== Text Box Styling ===== */
+.text-box {
   background-color: #1E1E1E;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.project:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-}
-
-/* ===== Button Styling ===== */
-button {
-  background-color: #9C27B0;
-  color: #fff;
-  border: none;
-  padding: 14px 28px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-  background-color: #4CAF50;
-  transform: translateY(-2px);
-}
-
-/* ===== Contact Card Styling ===== */
-.contact-card {
-  max-width: 500px;
-  margin: 0 auto 50px;
-  padding: 30px;
-  background: #1E1E1E;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-  text-align: left;
-}
-
-.contact-card p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #e0e0e0;
-}
-
-.contact-card a {
-  color: #9C27B0;
-  text-decoration: none;
-}
-
-.contact-card a:hover {
-  color: #4CAF50;
-}
-
-/* ===== Contact Form Styling ===== */
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  background: #1E1E1E;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-form h2 {
   color: #E0E0E0;
-  margin-bottom: 20px;
-  font-size: 26px;
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 20px;
-  border: 1px solid #333;
-  border-radius: 8px;
-  font-size: 16px;
-  background: #333;
-  color: #fff;
-}
-
-form button {
-  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  font-size: 18px;
 }
 
 /* ===== Animation ===== */
@@ -196,10 +111,6 @@ form button {
   .profile-img {
     width: 150px;
   }
-
-  .project {
-    width: 90%;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -209,9 +120,5 @@ form button {
 
   .profile-img {
     width: 130px;
-  }
-
-  .project {
-    width: 100%;
   }
 }
