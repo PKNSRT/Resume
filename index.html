@@ -27,9 +27,12 @@
         <img src="img2.jpg" alt="Image 2">
         <img src="img3.jpg" alt="Image 3">
       </div>
+    </div>
+
+    <div class="slider-buttons">
       <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
       <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </div>    
+    </div>
 
     <div class="text-box">
       <p>ผมชื่อ <strong>นายภาคินัย สุรินตา</strong> ชื่อเล่น <strong>ทรัพย์</strong> จบการศึกษาระดับปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์ จากมหาวิทยาลัยนเรศวร</p>
@@ -49,7 +52,7 @@
       slideIndex++;
       if (slideIndex > slides.length) { slideIndex = 1 }
       slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 5000); // Change image every 5 seconds
+      setTimeout(showSlides, 5000);
     }
 
     function moveSlide(n) {
@@ -63,7 +66,7 @@
       slides[slideIndex - 1].style.display = "block";
     }
 
-    showSlides(); // Initialize slider
+    showSlides();
   </script>
 
 </body>
