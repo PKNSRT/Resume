@@ -76,8 +76,8 @@ h1 {
 
 /* Image Slider */
 .image-slider {
-  width: 300px;
-  height: 300px;
+  width: 100%; /* ทำให้สไลด์มีความกว้างเต็มหน้าจอ */
+  height: 50vh; /* ความสูงที่เป็นอัตราส่วนกับหน้าจอ */
   margin: 30px auto;
   overflow: hidden;
   border-radius: 12px;
@@ -138,7 +138,7 @@ h1 {
   }
 
   .image-slider {
-    width: 220px;
+    width: 80%; /* ลดขนาดลงในมือถือ */
     height: 220px;
   }
 
@@ -184,8 +184,8 @@ h1 {
   }
 
   .image-slider {
-    width: 160px;
-    height: 160px;
+    width: 100%; /* ขยายความกว้างให้เต็มในมือถือ */
+    height: 200px;
   }
 
   section {
