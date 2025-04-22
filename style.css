@@ -194,7 +194,8 @@ h1 {
 /* ===== Responsive ===== */
 @media screen and (max-width: 768px) {
   nav ul li {
-    margin: 0 15px;
+    display: block;
+    margin: 10px 0;
   }
 
   .image-slider {
