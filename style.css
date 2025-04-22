@@ -216,7 +216,7 @@ h1 {
 
   nav ul li a {
     font-size: 14px;
-    padding: 8px 12px;
+    padding: 4px 6px;
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -230,7 +230,7 @@ h1 {
   }
 
   nav ul li a i {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .image-slider {
