@@ -27,7 +27,8 @@
         <img src="img2.jpg" alt="Image 2">
         <img src="img3.jpg" alt="Image 3">
       </div>
-      
+    </div>
+
     <div class="text-box">
       <p>ผมชื่อ <strong>นายภาคินัย สุรินตา</strong> ชื่อเล่น <strong>ทรัพย์</strong> จบการศึกษาระดับปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์ จากมหาวิทยาลัยนเรศวร</p>
       <p>ผมมีความสนใจด้านการพัฒนาโปรแกรม การวิเคราะห์ข้อมูล และการทำ Automation ด้วย Python รวมถึงการใช้เครื่องมือใน Microsoft Office เพื่อลดขั้นตอนการทำงานซ้ำ ๆ ให้มีประสิทธิภาพมากยิ่งขึ้น</p>
@@ -46,21 +47,10 @@
       slideIndex++;
       if (slideIndex > slides.length) { slideIndex = 1 }
       slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 5000);
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
 
-    function moveSlide(n) {
-      slideIndex += n;
-      let slides = document.querySelectorAll(".slides img");
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      if (slideIndex < 1) { slideIndex = slides.length }
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[slideIndex - 1].style.display = "block";
-    }
-
-    showSlides();
+    showSlides(); // Initialize slider
   </script>
 
 </body>
