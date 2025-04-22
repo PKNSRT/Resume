@@ -96,39 +96,6 @@ h1 {
   border-radius: 12px;
 }
 
-/* Move the slider buttons outside of the slider */
-.slider-buttons {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-.prev, .next {
-  padding: 10px 16px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-
-.prev {
-  margin-left: 100px;
-}
-
-.next {
-  margin-right: 100px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 /* Text Box */
 .text-box {
   background-color: #1E1E1E;
