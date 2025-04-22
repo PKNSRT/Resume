@@ -44,13 +44,13 @@ nav ul li a {
 
 nav ul li a i,
 nav ul li a {
-  color: #7b1f8d;
+  color: #9146FF;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover i, 
 nav ul li a:hover {
-  color: #4444ac;
+  color: #5865F2;
   transform: scale(1.1);
 }
 
@@ -61,7 +61,7 @@ nav ul li a.active {
 
 nav ul li a.active:hover i, 
 nav ul li a.active:hover {
-  color: #4444ac;
+  color: #5865F2;
   transform: scale(1.1);
 }
 
