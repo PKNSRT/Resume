@@ -42,35 +42,11 @@ nav ul li a {
   gap: 6px;
 }
 
-nav ul li a[href="index.html"] {
-  color: #9C27B0;
-}
-
-nav ul li a[href="about.html"] {
-  color: #9C27B0;
-}
-
-nav ul li a[href="experience.html"] {
-  color: #9C27B0;
-}
-
-nav ul li a[href="contact.html"] {
-  color: #9C27B0;
-}
-
-nav ul li a i.fa-home {
-  color: #9C27B0;
-}
-
-nav ul li a i.fa-user {
-  color: #9C27B0;
-}
-
-nav ul li a i.fa-briefcase {
-  color: #9C27B0;
-}
-
-nav ul li a i.fa-envelope {
+nav ul li a[href="index.html"],
+nav ul li a[href="about.html"],
+nav ul li a[href="experience.html"],
+nav ul li a[href="contact.html"],
+nav ul li a i {
   color: #9C27B0;
 }
 
@@ -104,12 +80,10 @@ h1 {
   margin: 30px auto;
   overflow: hidden;
   border-radius: 12px;
-  position: relative;
 }
 
 .image-slider .slides {
   display: flex;
-  transition: transform 1s ease-in-out;
   border-radius: 12px;
 }
 
@@ -118,30 +92,30 @@ h1 {
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
+  display: none;
 }
 
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+/* ปุ่มเลื่อนด้านล่าง */
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.slider-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
   border: none;
-  font-size: 20px;
+  background-color: #9C27B0;
+  color: #fff;
+  border-radius: 8px;
   cursor: pointer;
-  transform: translateY(-50%);
+  transition: background-color 0.3s;
 }
 
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.slider-buttons button:hover {
+  background-color: #BA68C8;
 }
 
 .text-box {
@@ -205,28 +179,15 @@ h1 {
   nav ul {
     display: flex;
     justify-content: space-around;
-    padding: 0;
-    margin: 0;
   }
 
   nav ul li {
-    display: inline-block;
     margin: 0;
   }
 
   nav ul li a {
     font-size: 14px;
     padding: 4px 6px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    transition: color 0.3s ease, transform 0.3s ease;
-    border-radius: 5px;
-  }
-
-  nav ul li a:hover {
-    color: #ffffff;
-    transform: scale(1.1);
   }
 
   nav ul li a i {
