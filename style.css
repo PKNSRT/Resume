@@ -1,4 +1,3 @@
-/* ===== General Body Styling ===== */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -6,10 +5,8 @@ body {
   background: #121212;
   color: #e0e0e0;
   line-height: 1.6;
-  padding-top: 20px;
 }
 
-/* ===== Navigation Bar ===== */
 nav {
   background: #1E1E1E;
   padding: 20px;
@@ -45,53 +42,47 @@ nav ul li a {
   gap: 6px;
 }
 
-/* ===== Icon Colors and Link Styling in Navbar ===== */
-
-/* Home */
 nav ul li a[href="index.html"] {
-  color: #9C27B0; /* เขียว */
+  color: #9C27B0;
 }
 
 nav ul li a[href="about.html"] {
-  color: #9C27B0; /* น้ำเงิน */
+  color: #9C27B0;
 }
 
 nav ul li a[href="experience.html"] {
-  color: #9C27B0; /* ส้ม */
+  color: #9C27B0;
 }
 
 nav ul li a[href="contact.html"] {
-  color: #9C27B0; /* ชมพู */
+  color: #9C27B0;
 }
 
-/* Icon colors */
 nav ul li a i.fa-home {
-  color: #9C27B0; /* เขียว */
+  color: #9C27B0;
 }
 
 nav ul li a i.fa-user {
-  color: #9C27B0; /* น้ำเงิน */
+  color: #9C27B0;
 }
 
 nav ul li a i.fa-briefcase {
-  color: #9C27B0; /* ส้ม */
+  color: #9C27B0;
 }
 
 nav ul li a i.fa-envelope {
-  color: #9C27B0; /* ชมพู */
+  color: #9C27B0;
 }
 
-/* ===== Hover effect for text and icons ===== */
 nav ul li a:hover {
-  color: #ffffff; /* สีตัวอักษรเมื่อ hover */
+  color: #ffffff;
   transform: scale(1.1);
 }
 
 nav ul li a:hover i {
-  color: #ffffff; /* ไอคอนเปลี่ยนเป็นสีขาวตอน hover */
+  color: #ffffff;
 }
 
-/* ===== Section Styling ===== */
 section {
   padding: 80px 20px;
   text-align: center;
@@ -107,7 +98,6 @@ h1 {
   text-transform: uppercase;
 }
 
-/* ===== Image Slider ===== */
 .image-slider {
   width: 300px;
   height: 300px;
@@ -120,17 +110,16 @@ h1 {
 .image-slider .slides {
   display: flex;
   transition: transform 1s ease-in-out;
-  border-radius: 12px; /* ทำให้กรอบมุมมน */
+  border-radius: 12px;
 }
 
 .image-slider img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 12px; /* ทำให้มุมกรอบของภาพมน */
+  border-radius: 12px;
 }
 
-/* ===== Button Styling ===== */
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -155,7 +144,6 @@ h1 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* ===== Text Box Styling ===== */
 .text-box {
   background-color: #1E1E1E;
   color: #E0E0E0;
@@ -168,14 +156,11 @@ h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ===== Hover effect for Text Box ===== */
 .text-box:hover {
-  transform: scale(1.01); /* Makes the box slightly larger */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Adds a stronger shadow */
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-
-/* ===== Animation ===== */
 .fade-in {
   animation: fadeIn 1s ease-out forwards;
   opacity: 0;
@@ -192,19 +177,18 @@ h1 {
   }
 }
 
-/* ===== Responsive ===== */
 @media screen and (max-width: 768px) {
   nav ul li {
     margin: 0 10px;
   }
 
   .image-slider {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .text-box {
@@ -231,7 +215,7 @@ h1 {
   }
 
   nav ul li a {
-    font-size: 12px;
+    font-size: 14px;
     padding: 8px 12px;
     display: inline-flex;
     align-items: center;
@@ -246,6 +230,23 @@ h1 {
   }
 
   nav ul li a i {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .image-slider {
+    width: 160px;
+    height: 160px;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .text-box {
+    font-size: 14px;
   }
 }
