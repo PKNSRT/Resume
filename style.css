@@ -195,7 +195,7 @@ h1 {
 /* ===== Responsive ===== */
 @media screen and (max-width: 768px) {
   nav ul li {
-    margin: 0 8px;
+    margin: 0 10px;
   }
 
   .image-slider {
@@ -213,20 +213,42 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
-  section {
-    padding: 60px 20px;
+  nav {
+    padding: 10px 0; /* ลดการ padding ของ nav */
+    text-align: center; /* จัดให้ข้อความอยู่กลาง */
+    position: sticky; /* ทำให้ nav ติดอยู่ด้านบนขณะเลื่อน */
   }
 
-  .image-slider {
-    width: 140px;
-    height: 140px;
+  nav ul {
+    display: flex; /* ทำให้เมนูเป็นแถบแนวนอน */
+    justify-content: space-around; /* จัดเมนูให้กระจายเท่าๆ กัน */
+    padding: 0;
+    margin: 0;
   }
 
-  h1 {
-    font-size: 30px;
+  nav ul li {
+    display: inline-block;
+    margin: 0; /* เอาระยะห่างออก */
   }
 
-  .text-box {
-    font-size: 14px;
+  nav ul li a {
+    font-size: 16px;
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+  }
+
+  /* เพิ่ม effect hover */
+  nav ul li a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+
+  /* เพิ่มให้ขนาดของ icon เล็กลงบนมือถือ */
+  nav ul li a i {
+    font-size: 20px;
   }
 }
