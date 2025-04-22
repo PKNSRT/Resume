@@ -47,10 +47,15 @@
       slideIndex++;
       if (slideIndex > slides.length) { slideIndex = 1 }
       slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 5000); // Change image every 5 seconds
+      setTimeout(showSlides, 5000);
     }
 
-    showSlides(); // Initialize slider
+    showSlides();
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
   </script>
 
 </body>

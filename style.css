@@ -42,21 +42,27 @@ nav ul li a {
   gap: 6px;
 }
 
-nav ul li a[href="index.html"],
-nav ul li a[href="about.html"],
-nav ul li a[href="experience.html"],
-nav ul li a[href="contact.html"],
-nav ul li a i {
-  color: #9C27B0;
+nav ul li a i,
+nav ul li a {
+  color: #7b1f8d;
+  transition: color 0.3s ease;
 }
 
+nav ul li a:hover i, 
 nav ul li a:hover {
-  color: #ffffff;
+  color: #4444ac;
   transform: scale(1.1);
 }
 
-nav ul li a:hover i {
+nav ul li a.active i,
+nav ul li a.active {
   color: #ffffff;
+}
+
+nav ul li a.active:hover i, 
+nav ul li a.active:hover {
+  color: #4444ac;
+  transform: scale(1.1);
 }
 
 section {

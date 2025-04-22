@@ -35,5 +35,14 @@
     </div>
   </section>
 
+  <script>
+    // JavaScript to add 'active' class to the current page link
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+
 </body>
 </html>

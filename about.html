@@ -38,26 +38,35 @@
     </div>
 
     <h1>Skills</h1>
-<div class="text-box">
-  <h3>Hard Skills</h3>
-  <ul>
-    <li>การเขียนโปรแกรม Python</li>
-    <li>การใช้ Microsoft Office (Excel, Word, PowerPoint)</li>
-    <li>Data Analysis</li>
-    <li>การพัฒนาเว็บไซต์ (HTML, CSS, JavaScript)</li>
-  </ul>
+    <div class="text-box">
+      <h3>Hard Skills</h3>
+      <ul>
+        <li>การเขียนโปรแกรม Python</li>
+        <li>การใช้ Microsoft Office (Excel, Word, PowerPoint)</li>
+        <li>Data Analysis</li>
+        <li>การพัฒนาเว็บไซต์ (HTML, CSS, JavaScript)</li>
+      </ul>
 
-  <h3>Soft Skills</h3>
-  <ul>
-    <li>การทำงานเป็นทีม</li>
-    <li>การคิดวิเคราะห์</li>
-    <li>การบริหารจัดการเวลา</li>
-    <li>การแก้ปัญหา</li>
-    <li>การคิดสร้างสรรค์</li>
-    <li>ความสามารถในการเรียนรู้ด้วยตนเอง</li>
-  </ul>
-</div>
-
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>การทำงานเป็นทีม</li>
+        <li>การคิดวิเคราะห์</li>
+        <li>การบริหารจัดการเวลา</li>
+        <li>การแก้ปัญหา</li>
+        <li>การคิดสร้างสรรค์</li>
+        <li>ความสามารถในการเรียนรู้ด้วยตนเอง</li>
+      </ul>
+    </div>
   </section>
+
+  <!-- JavaScript to highlight active navigation link -->
+  <script>
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+
 </body>
 </html>
