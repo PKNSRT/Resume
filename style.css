@@ -6,6 +6,7 @@ body {
   background: #121212;
   color: #e0e0e0;
   line-height: 1.6;
+  padding-top: 80px;
 }
 
 /* ===== Navigation Bar ===== */
@@ -194,8 +195,7 @@ h1 {
 /* ===== Responsive ===== */
 @media screen and (max-width: 768px) {
   nav ul li {
-    display: block;
-    margin: 10px 0;
+    margin: 0 8px;
   }
 
   .image-slider {
