@@ -21,13 +21,33 @@
   <section class="fade-in">
     <h1>Personal Information</h1>
     
-    <div class="text-box">
-      <p><strong>Name:</strong> ภาคินัย สุรินตา</p>
-      <p><strong>Nickname:</strong> ทรัพย์</p>
-      <p><strong>Age:</strong> 24 ปี</p>
-      <p><strong>Birthday:</strong> 19 สิงหาคม 2001</p>
-      <p><strong>Nationality:</strong> ไทย</p>
-    </div>
+<div class="text-box">
+  <p><strong>Name:</strong> ภาคินัย สุรินตา</p>
+  <p><strong>Nickname:</strong> ทรัพย์</p>
+  <p><strong>Age:</strong> <span id="age"></span> ปี</p>
+  <p><strong>Birthday:</strong> 19 สิงหาคม 2001</p>
+  <p><strong>Nationality:</strong> ไทย</p>
+</div>
+
+<script>
+  // วันเกิด (เดือนเริ่มจาก 0 = มกราคม)
+  const birthDate = new Date(2001, 7, 19); // 19 สิงหาคม 2001
+  const today = new Date();
+
+  // คำนวณอายุ
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  const dayDiff = today.getDate() - birthDate.getDate();
+
+  // ตรวจสอบว่าผ่านวันเกิดปีนี้หรือยัง
+  if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+    age--;
+  }
+
+  // แสดงอายุในหน้าเว็บ
+  document.getElementById("age").textContent = age;
+</script>
+
 
     <h1>Education</h1>
     <div class="text-box">
